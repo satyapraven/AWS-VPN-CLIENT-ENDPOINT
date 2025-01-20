@@ -31,3 +31,6 @@ In this guide, I will demonstrate how to use OpenSSL to generate a self-signed S
 Once the certificate is generated, you can upload the private key and the certificate to AWS VPN configuration. This will allow the VPN for authentication.
 Remember that this certificate is self-signed and won't be validated by a trusted certificate authority (CA), which is typically suitable for internal or development environments.
 
+### 3.	Import the Certificate into ACM
+- a. Open the AWS Management Console.
+
