@@ -18,3 +18,12 @@ In this guide, I will demonstrate how to use OpenSSL to generate a self-signed S
 - Download the OpenSSL tool from below link;
 - https://github.com/OpenVPN/easy-rsa/releases
 - Extract the zip file of EasyRSA --> Go to cmd --> Go to folder where extracted files are located --> type .\EasyRSA-Start.bat --> ./easyrsa init-pki --> enter SERVER --> ./easyrsa build-ca nopass --> ./easyrsa build-server-full server nopass --> enter Yes --> ./easyrsa build-client-full client1.domain.tld nopass --> Exit
+- The generated certificates can be found in the extracted folder under EasyRSA->PKI
+- Commands to Create Directory and copy the PKI Content:
+  - mkdir C:\vpncert
+  - copy pki\ca.crt C:\vpncert
+  - copy pki\issued\server.crt C:\vpncert
+  - copy pki\private\server.key C:\vpncert
+  - copy pki\issued\client1.domain.tld.crt C:\vpncert
+  - copy pki\private\client1.domain.tld.key C:\vpncert
+  - cd C:\vpncert
