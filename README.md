@@ -40,6 +40,32 @@ Remember that this certificate is self-signed and won't be validated by a truste
    - **Private key:** Open your **server.key** file, copy the entire content, and paste it into the "**Private key**" field.
    - **Certificate chain (optional)**: open **ca.crt** file with notepad and copy the entire content , and paste it into the " **Certificate chain** " field.
    - Click on **Import certificate**.
+ - Same process for Client certificate as well;
+   -- **Certificate body**: Open your **client1.domain.tld.crt** file in a text editor, copy the entire content and paste it into the "**Certificate body**" field.
+   - **Private key:** Open your **client1.domain.tld.crt** file, copy the entire content, and paste it into the "**Private key**" field.
+   - **Certificate chain (optional)**: open **ca.crt** file with notepad and copy the entire content , and paste it into the " **Certificate chain** " field.
+   - Click on **Import certificate**.
+
+### 4.	Create Client VPN Endpoint
+- Navigate to the AWS VPC Console
+- Go to "Client VPN Endpoints"
+- Click "Create Client VPN Endpoint"
+- Configure the following:
+    - Client IPv4 CIDR: Specify a CIDR block (e.g., 30.0.0.0/16)
+    - Server certificate ARN: Select the certificate you created.
+    - Authentication options: Choose between:
+        - Choose Mutual Authentication if you are using certificates, or
+        - Active Directory for AD-based authentication
+    - Connection Log Options: Enable logging for monitoring purposes. (Optional)
+    - Split-tunnel: Enable/disable based on requirements.
+    - DNS servers: Specify if needed
+    - Select appropriate VPC and security groups.
+- Click Create Client VPN Endpoint to finish.
+### 5.	Associate with a VPC Subnet
+
+
+
+
 
 
 
