@@ -32,5 +32,14 @@ Once the certificate is generated, you can upload the private key and the certif
 Remember that this certificate is self-signed and won't be validated by a trusted certificate authority (CA), which is typically suitable for internal or development environments.
 
 ### 3.	Import the Certificate into ACM
-- a. Open the AWS Management Console.
+- Open the AWS Management Console.
+- In the search bar, type ACM and select AWS Certificate Manager.
+- In the ACM dashboard, click on Import a certificate (located at the top right of the page).
+- On the Import a certificate page:
+   - **Certificate body**: Open your **sever.crt** file in a text editor, copy the entire content and paste it into the "**Certificate body**" field.
+   - **Private key:** Open your **server.key** file, copy the entire content, and paste it into the "**Private key**" field.
+   - **Certificate chain (optional)**: open **ca.crt** file with notepad and copy the entire content , and paste it into the " **Certificate chain** " field.
+   - Click on **Import certificate**.
+
+
 
