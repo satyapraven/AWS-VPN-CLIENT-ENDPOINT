@@ -38,7 +38,7 @@ This Terraform configuration sets up an AWS Client VPN endpoint with certificate
 |------|-------------|------|----------|
 | `destination_vpc_cidr` | CIDR block for the VPC where the Client VPN endpoint will be attached | string | yes |
 | `client_ipv4_cidr` | IPv4 CIDR block to assign to VPN clients | string | yes |
-| `aws_region` | AWS region | string | no (default: us-west-2) |
+| `aws_region` | AWS region | string | no (default: ap-south-1) |
 | `vpc_id` | ID of the VPC where the Client VPN endpoint will be attached | string | yes |
 | `subnet_ids` | List of subnet IDs where the Client VPN endpoint will be associated | list(string) | yes |
 
