@@ -62,6 +62,11 @@ Remember that this certificate is self-signed and won't be validated by a truste
     - Select appropriate VPC and security groups.
 - Click Create Client VPN Endpoint to finish.
 ### 5.	Associate with a VPC Subnet
+        - After creating the VPN endpoint, go to the Client VPN Endpoints section.
+        - Select the VPN endpoint you created, then click on Associate Subnet.
+        - Choose a Subnet: Select a subnet in your VPC that the VPN clients can access.
+        - Click Associate
+
 
 
 
