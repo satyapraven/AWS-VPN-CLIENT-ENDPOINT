@@ -62,7 +62,7 @@ Remember that this certificate is self-signed and won't be validated by a truste
       #A split tunnel is a configuration where only specific traffic is routed through the VPN connection to the VPC, while other traffic (e.g., internet-bound traffic) continues to use the user's local internet connection. This helps optimize bandwidth, reduce latency, and minimize unnecessary load on the VPN tunnel.
     - **DNS servers**: Specify if needed
     - Select appropriate **VPC and security groups**.
-- Click Create Client VPN Endpoint to finish.
+- Click **Create Client VPN Endpoint** to finish.
   
 ### 5.	Associate with a VPC Subnet
 - After creating the VPN endpoint, go to the **Client VPN Endpoints** section.
@@ -71,7 +71,7 @@ Remember that this certificate is self-signed and won't be validated by a truste
 - Click **Associate**
 
 ### 6.	Configure Security Groups
-- Create a Security Group that allows inbound connections on UDP port 1194 (default port for OpenVPN).
+- Create a Security Group that allows inbound connections on UDP port **1194** (default port for OpenVPN).
 - Add inbound rules to allow access to the required ports (e.g., HTTP, HTTPS, RDP, SSH).
   **Example:**
 - **Protocol**: UDP, Port Range: 1194, Source: 0.0.0.0/0
@@ -80,7 +80,7 @@ Remember that this certificate is self-signed and won't be validated by a truste
 ### 7.	Configure Security GroupsConfigure Client VPN Authorization
 - Go to **VPC Dashboard** → **Client VPN Endpoints**.
 - Select the **VPN endpoint** and click **Authorization**.
-- Add authorization rule:
+- Add **authorization rule**:
   -Choose **Allow access to all users** if you are using certificates or else add Active Directory details;
 
 ### 8.	Download and Configure OpenVPN Client
