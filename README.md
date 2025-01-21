@@ -1,7 +1,7 @@
 # AWS VPN Client Endpoint Configuration - Using AWS Console
 
 ### 1. Purpose
-This Standard Operating Procedure (SOP) outlines the process for configuring AWS VPN Client Endpoint to ensure secure remote access to AWS resources.
+This document help you to sets up an AWS Client VPN endpoint with certificate-based authentication to ensure secure remote access to AWS resources.
 
 ### 2. Prerequisites
 - An AWS account configured with the necessary access rights.
