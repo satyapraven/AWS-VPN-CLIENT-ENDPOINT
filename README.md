@@ -27,7 +27,7 @@ This Terraform configuration sets up an AWS Client VPN endpoint with certificate
    ```hcl
    aws_region           = "us-west-2"            # Your preferred AWS region
    destination_vpc_cidr = "10.0.0.0/16"          # Your VPC CIDR
-   client_ipv4_cidr    = "172.16.0.0/22"        # CIDR for VPN clients
+   client_ipv4_cidr    = "172.16.0.0/22"         # CIDR for VPN clients
    vpc_id              = "vpc-12345678"          # Your VPC ID
    subnet_ids          = ["subnet-12345678"]     # Your subnet IDs
    ```
