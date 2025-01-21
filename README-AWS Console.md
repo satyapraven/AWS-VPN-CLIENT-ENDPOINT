@@ -16,7 +16,7 @@ You will require an SSL certificate for the Client VPN endpoint. You can opt for
 In this guide, I will demonstrate how to use OpenSSL to generate a self-signed SSL certificate for both the server and client components of AWS VPN. Please follow these steps:
 
 - Download the **OpenSSL tool** from below link;
-- https://github.com/OpenVPN/easy-rsa/releases
+  https://github.com/OpenVPN/easy-rsa/releases
 - Extract the zip file of **EasyRSA** --> Go to **cmd** --> Go to folder where extracted files are located --> **.\EasyRSA-Start.bat** --> **./easyrsa init-pki** --> 
 **SERVER** or **CN** --> **./easyrsa build-ca nopass** --> **./easyrsa build-server-full server nopass** --> enter **Yes** --> **./easyrsa build-client-full client1.domain.tld nopass** --> Exit
 - The generated certificates can be found in the extracted folder under **EasyRSA->PKI**
