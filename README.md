@@ -34,11 +34,10 @@ This Terraform configuration sets up an AWS Client VPN endpoint with certificate
 
 
 3. edit `main.tf` with your values:
-   ```bash
-   subject {
+ 
     common_name = "**vpn.yourcompany.in**" # Your domain name
-  }
-   ```
+
+ 
 ## Variables
 
 | Name | Description | Type | Required |
