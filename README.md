@@ -62,10 +62,18 @@ Remember that this certificate is self-signed and won't be validated by a truste
     - Select appropriate VPC and security groups.
 - Click Create Client VPN Endpoint to finish.
 ### 5.	Associate with a VPC Subnet
-- After creating the VPN endpoint, go to the Client VPN Endpoints section.
-- Select the VPN endpoint you created, then click on Associate Subnet.
+- After creating the VPN endpoint, go to the **Client VPN Endpoints** section.
+- Select the VPN endpoint you created, then click on **Associate Subnet**.
 - Choose a Subnet: Select a subnet in your VPC that the VPN clients can access.
-- Click Associate
+- Click **Associate**
+
+### 6.	Configure Security Groups
+- Create a Security Group that allows inbound connections on UDP port 1194 (default port for OpenVPN).
+- Add inbound rules to allow access to the required ports (e.g., HTTP, HTTPS, RDP, SSH).
+  **Example:**
+- **Protocol**: UDP, Port Range: 1194, Source: 0.0.0.0/0
+- **For application access**: Protocol: TCP, Port Range: 80, 443, Source: your VPN CIDR block (30.0.0.0/22
+
 
 
 
