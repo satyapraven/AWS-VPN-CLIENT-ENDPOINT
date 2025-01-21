@@ -12,7 +12,7 @@ resource "tls_self_signed_cert" "vpn_server" {
   private_key_pem = tls_private_key.vpn_server.private_key_pem
 
   subject {
-    common_name = "vpn.HMDA.gov.in"
+    common_name = "vpn.awsvpn.in"
   }
 
   validity_period_hours = 87600 # 10 years
